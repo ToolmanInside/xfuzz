@@ -36,8 +36,7 @@ def setup(sphinx):
     thisdir = os.path.dirname(os.path.realpath(__file__))
     sys.path.insert(0, thisdir + '/utils')
     from SolidityLexer import SolidityLexer
-    sl = SolidityLexer()
-    sphinx.add_lexer('Solidity', sl)
+    sphinx.add_lexer('Solidity', SolidityLexer)
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
